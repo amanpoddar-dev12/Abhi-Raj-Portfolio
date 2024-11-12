@@ -9,12 +9,13 @@ html{
 }
 body{
     background-image:url(Image/Rectangle14.png);
+    /* position: absolute */
 }
 .icons{
     height: 418vh;
     width: 100%;
-
 }
+
 nav{
  width: 84%;
  margin: auto;
@@ -24,6 +25,7 @@ nav{
  justify-content: space-between;
 }
 .logo{
+    
     width: 100px;
     cursor: pointer;
 }
@@ -54,8 +56,10 @@ nav ul li a:hover::after{
     width: 100%;
 }
 .info{
+    
     margin-left: 8%;
-    margin-top: 15%;
+    margin-top: 10%;
+
 }
 .info h1{
  font-size: 60px;
@@ -85,13 +89,13 @@ span{
     position: absolute;
     height: 70vh;
     left: 80%;
-    bottom: 0;
+    bottom: 100px;
     transform: translate(-50%);
     margin: 80px;
     transition: bottom 1s;
 }
 .header img:hover.back-image{
-    bottom: 40px;
+    bottom: 50px;
   }
 .image img{
     width:220px;
@@ -104,7 +108,7 @@ span{
     transition: bottom 1s;
 }
 .image img:hover.img{
-  bottom: 90px;
+  bottom: 100px;
 }
 /*-----about---*/
 #about{
@@ -311,7 +315,7 @@ span{
 }
 #contact{
     margin-left: 110px;
-    margin-top: 180px;
+    margin-top: 290px;
 }
 .contact-right form{
     width: 100%;
@@ -355,14 +359,15 @@ nav .fas {
 @media only screen and (max-width: 600px) {
     body {
      background-image:url(Image/Frame1.png);
+     /* background-color: cyan; */
      width: 100%;
      height: 100%;
     }
     .header img{
         position: absolute;
         height: 50vh;
-        left: 80%;
-        bottom: 170px;
+        left: 60%;
+        bottom: 120px;
         transform: translate(-50%);
         margin: 50px; 
         transition: bottom 1s;
@@ -372,12 +377,14 @@ nav .fas {
         }
         .image img{
             left: 55px;
-            width: 70px;
-            height: 70px;
-            bottom: 200px;
+            width: 120px;
+            height: 120px;
+            bottom: 50px;
         }
     .info{
-        margin-top: 77%;
+        padding-left: 0px;
+        margin-right: 60px;
+        margin-top: 7%;
         font-size: 15px;
     }
     .info h1{
@@ -389,6 +396,10 @@ nav .fas {
     font-size: 35px;
      margin-left: 75%;
 }
+/* .logo{
+    width: 50px;
+    padding: 0px 0px 0px ;
+} */
 nav ul{
     background: #ff044f;
     position: fixed;
@@ -418,8 +429,14 @@ nav ul .fas{
 .container{
     font-size: px;
 }
+.about-column-1{
+    margin-top: 300px;
+    margin-right: 50px;
+}
 .about-column-1,.about-column-2{
+
     flex-basis: 100%;
+   
 }
 .about-column-2{
     font-size: 14px;
